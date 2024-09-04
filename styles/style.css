@@ -1,6 +1,6 @@
 /* Imports the poppins font from Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
 :root{
     --main-color: #074E8C;
     --text-color-01: #07070D;
@@ -45,3 +45,165 @@ body{
     background-color: var(--bg-color-01);
     color: var(--text-color-01);
 }
+
+/* HEADER */
+.logo{
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: "Unlock", serif;
+    cursor: default;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: var(--bg-color-01);
+}
+
+.nav a{
+    font-size: 1.2rem;
+    color: var(--text-color-01);
+    padding: 0.1rem 1rem;
+    transition: 0.4s;
+}
+
+.nav a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+/* /HEADER */
+
+/*  MAIN / HERO */
+.main{
+    
+}
+.hero{
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(../img/hero-img.jpg) no-repeat center center;
+    background-size: cover;
+    color: var(--bg-color-01);
+    padding: 10rem 2rem; /* Ajusta o padding para criar espaço dentro da seção */
+    padding-top: calc(10rem + 2rem); /* Adiciona padding superior suficiente para o header fixo */
+    margin-top: 0; /* Remove qualquer margem extra superior */
+    width: 100%;
+    min-height: 110vh;
+}
+
+
+.hero-content{
+    position: absolute;
+    left: 2rem;
+    top: rem;
+    z-index: 2;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+}
+
+.hero-content h1 span{
+    color: var(--main-color);
+}
+
+.hero-content p{
+    margin: 2rem 0rem;
+    word-wrap: break-word; /* Quebra palavras longas */
+    line-height: 1.6; /* Ajuste a altura da linha para melhor legibilidade */
+    max-width: 40rem; /* Limita a largura máxima do texto */
+}
+.btn-divs{
+    position: absolute;
+    left: 2rem;
+    top: 30rem;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+
+.card-blue{
+    position: absolute; /* Posiciona o card de forma absoluta dentro da hero */
+    right: 3rem;
+    bottom: -10.5rem;
+    background-color: var(--main-color);
+    padding: 2.2rem;
+    border-radius: 8px;
+    color: #fff;
+    z-index: 1; /* Certifica-se de que o card esteja acima da imagem, mas abaixo do conteúdo */
+    max-width: max-content;
+    width: calc(100% - 1rem); /* Ajusta a largura conforme necessário */
+    white-space: nowrap; /* Impede quebra de linha */
+   
+}
+
+.card-blue p{
+    padding: auto;
+    margin: 0.8rem 0.5rem;
+}
+/* Estiliza a linha de score */
+.row-score {
+    position: relative;
+    background: #f4f4f4; /* Cor de fundo para a seção de score */
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+}
+
+.score {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.score h2{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-left: 0.8rem;
+}
+
+.score p{
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 0.8rem;
+}
+
+
+/* Ajuste o layout para garantir que o card-blue se estenda até a seção de score */
+.hero, .card-blue {
+    width: 100%;
+}
+/* /MAIN / HERO */
+
+
+
+/* BUTTON */
+.btn{
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    color: var(--bg-color-01);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+    border: none;
+    width: max-content;
+}
+
+.btn:hover{
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/* /BUTTON */
