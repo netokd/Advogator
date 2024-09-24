@@ -27,7 +27,6 @@ Advogator is a sophisticated landing page designed for law firms. It offers a sl
 
 - **HTML5**: For the page structure and content.
 - **CSS3**: For styling and layout (included in `styles/style.css`).
-- **JavaScript**: For interactive elements. nao implementado
 - **Google Fonts**: *Satisfy* for elegant text styling.
 - **Boxicons**: For icons used in the layout.
 
@@ -66,13 +65,10 @@ Ensure you have the following installed:
 - **Customization**: Modify `styles/style.css` for styling and `index.html` for content changes.
 - **Deployment**: Deploy the site using services like GitHub Pages, Netlify, or a similar hosting provider.
 
-## Contact
+## Informações de desenvolvimento - em portugues
 
-For any inquiries or additional information, please contact us:
+Conclui basicamente esse projeto, to com dificuldade ainda na questão design, como fiz esse template no figma sozinho, nao sabia que cores por de fundo e texto para melhor contraste e sentido pra marca, como foi uma marca que nao existia de fato, tambem nao tinha nenhum manual de marca para me guiar e ajudar, a parte de serviços fiquei muito descontente, porem ta ai, so que achei muito feio, aceito dicas para melhorar o design
 
-- **Address**: Skyline Tower, 18th Floor, Suite 21C, Jl. Harmoni Kav. 23, Central Jakarta, Jakarta Pusat, 10130
-- **Email**: info@advogator.com
-- **Phone**: (+1) 555-123-4567
 
 ## License
 
