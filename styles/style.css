@@ -318,6 +318,9 @@ footer{
     padding: 3rem;
 }
 
+footer h4{
+    font-size: 1.3rem;
+}
 .footer-title{
     display: flex;
     justify-content:space-between;
@@ -338,11 +341,13 @@ footer{
     border-bottom: solid  0.1rem var(--text-color-02);
 }
 .box-footer{
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     padding: 1rem 2rem;
+    gap: 1rem;
 }
 
 .footer-about, .footer-address, .footer-contact, .footer-links {
@@ -351,22 +356,34 @@ footer{
 
 .footer-about p {
     margin: 0; /* Remove margens para evitar desalinhamento */
+    font-size: 1rem;
 }
 
-.box-footer p{
+.footer-social i{
+    font-size: 1.5rem;
+}
+
+.footer-social{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.box-footer p, .box-footer a{
     margin-top: 0.5rem;
     word-wrap: break-word;
 }
 
 .footer-about{
-    flex: 0 0 40%; /* Mantém a largura fixa em 40% */
+    width: 40%; /* Mantém a largura fixa em 40% */
 }
 
 .footer-address,
-.footer-contact,
+.footer-contact{
+    width: 25%;
+}
 .footer-links {
-    flex: 1; /* Permite que essas colunas se expandam igualmente */
-    min-height: 12rem;
+    width: 10%;
 }
 
 .footer-links{
@@ -381,6 +398,21 @@ footer{
     color: var(--bg-color-01);
 }
 
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-copyright a{
+    color: var(--bg-color-01);
+    margin-top: 1rem;
+    border-bottom: var(--bg-color-01) 0.1rem solid;
+}
+
+.footer-copyright a:hover{
+    color: var(--main-color);
+    transform: scale(1.2rem);
+    border-bottom: var(--bg-color-01) 0.1rem solid;
+}
 /* /FOOTER */
 
 
